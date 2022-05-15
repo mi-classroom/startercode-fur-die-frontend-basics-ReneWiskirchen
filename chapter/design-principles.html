@@ -2,6 +2,7 @@
 <html lang="de">
 
     <head>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -144,6 +145,61 @@
             </tr>
             </tbody>
         </table>
+        <a href="../chapter/design-prinicples.html">Show all</a>
+        <img 
+            src="../_data/images/user-experience.png" width='198' height='158'/>
+
+        <form method="post">
+            <table>
+                <thead></thead>
+                
+                <tbody>
+                    <tr>
+                    <td>
+                        <label>Name:</label>
+                        <input type="text"></td>
+                </tr>
+                <tr>
+                    <td>
+                    <label>Email</label>
+                    <input type="email">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+            <label>Upload</label>
+            <input type="file" id="myFile" name="filename">
+                </tr>
+                <tr>
+                    <td>
+            <label>Textfeld</label>
+            <textarea rows="7"></textarea>
+        </td>
+                </tr>
+                <tr>
+                    <td>
+            <label>Soll ihr Autorenname zensiert werden?</label>
+            <input type="radio" name="Ja" value="1"> Ja
+            <input type="radio" name="Nein" value="0"> Nein
+        </td>
+                </tr>
+                <tr>
+                    <td>
+            <input type="checkbox" 
+            onchange="document.getElementById('absenden').disabled = !this.checked">  
+            AGBs zustimmen
+            <input type="submit" id='absenden'>
+        </td>
+                </tr>
+                <tr>
+                    <td>
+            <input type="reset" value="Zurücksetzen" />
+        </td>
+                </tr>
+            </tbody>
+        </table>
+
+        </form>
     </body>
     
 
